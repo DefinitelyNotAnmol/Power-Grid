@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<title>Contact V4</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Survey
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Age is required">
+					<span class="label-input100">Your age</span>
+					<input class="input100" type="text" name="name" placeholder="Enter your age">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Grade</span>
+					<div>
+						<select class="selection-2" name="grade" id="grade">
+							<option>Select your grade</option>
+							<option value="E8">E8 - GM</option>
+							<option value="E7">E7</option>
+							<option value="E6">E6</option>
+							<option value="E5">E5</option>
+							<option value="E4">E4</option>
+							<option value="E3">E3</option>
+							<option value="E2">E2</option>
+
+							<option value="SSG">SSG</option>
+							<option value="S4">S4</option>
+							<option value="S3">S3</option>
+							<option value="S2">S2</option>
+							<option value="S1">S1</option>
+
+							<option value="WSG">WSG</option>
+							<option value="W11">W11</option>
+							<option value="W10">W10</option>
+							<option value="W9">W9</option>
+							<option value="W8">W8</option>
+							<option value="W6">W6</option>
+							<option value="W5">W5</option>
+							<option value="W4">W4</option>
+							<option value="W3">W3</option>
+							<option value="W2">W2</option>
+							<option value="W1">W1</option>
+							<option value="W0">W0</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Region</span>
+					<div>
+						<select class="selection-2" name="region" id="region">
+							<option>Select your region</option>
+							<option value="CC">CC</option>
+							<option value="NR1">NR-I</option>
+							<option value="NR2">NR-II</option>
+							<option value="NR3">NR-III</option>
+							<option value="ER1">ER-I</option>
+							<option value="ER2">ER-II</option>
+							<option value="NER">NER</option>
+							<option value="ODISHA">Odisha Project</option>
+							<option value="SR1">SR-I</option>
+							<option value="SR2">SR-II</option>
+							<option value="WR1">WR-I</option>
+							<option value="WR2">WR-II</option>
+							<option value="RPTHVDC">RPTHVDC</option>
+							<option value="NERPSIP">NERPSIP</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input">
+					<span class="label-input100">Suggestions / Recommendations for improvement. If any</span>
+					<textarea class="input100" name="recommendations" placeholder="Your suggestions / recommendations here..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<!-- <div id="dropDownSelect1"></div> -->
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
