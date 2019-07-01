@@ -9,7 +9,7 @@
     font-family: Poppins-Medium;
     src: url('../fonts/poppins/Poppins-Medium.ttf'); 
 }
-
+ 
 @font-face {
     font-family: Poppins-Bold;
     src: url('../fonts/poppins/Poppins-Bold.ttf'); 
@@ -148,11 +148,11 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: #a64bf4;
-    background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
+    background: #89cfef;
+    /* background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
     background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
     background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
-    background: linear-gradient(45deg, #00dbde, #fc00ff); 
+    background: linear-gradient(45deg, #00dbde, #fc00ff);  */
 }
 
 .wrap-contact100 {
@@ -272,7 +272,7 @@ textarea.input100 {
 }
 
 .wrap-contact100-form-btn {
-    width: 100%;
+    width: 30%;
     display: block;
     position: relative;
     z-index: 1;
@@ -284,13 +284,13 @@ textarea.input100 {
 .contact100-form-bgbtn {
     position: absolute;
     z-index: -1;
-    width: 300%;
+    width: 200%;
     height: 100%;
-    background: #a64bf4;
-    background: -webkit-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: #89cfef;
+    /* background: -webkit-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
     background: -o-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
     background: -moz-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
-    background: linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff); */
     top: 0;
     left: -100%;
 
@@ -510,20 +510,20 @@ textarea.input100 {
 }
 
 .select2-container .select2-results__option[aria-selected="true"] {
-    background: #a64bf4;
-    background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
+    background: #89cfef;
+    /* background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
     background: -o-linear-gradient(right, #00dbde, #fc00ff);
     background: -moz-linear-gradient(right, #00dbde, #fc00ff);
-    background: linear-gradient(right, #00dbde, #fc00ff);
+    background: linear-gradient(right, #00dbde, #fc00ff); */
     color: white;
     }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
-    background: #a64bf4;
-    background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
+    background: #89cfef;
+    /* background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
     background: -o-linear-gradient(right, #00dbde, #fc00ff);
     background: -moz-linear-gradient(right, #00dbde, #fc00ff);
-    background: linear-gradient(right, #00dbde, #fc00ff);
+    background: linear-gradient(right, #00dbde, #fc00ff); */
     color: white;
 }
 
