@@ -4,15 +4,15 @@
 	<title>Powergrid Grievance Procedure Survey</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-	<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -26,9 +26,9 @@
 					Survey
 				</span>
 
-				<div class="person-details" data-validate="Age is required">
+				<div class="person-details validate-input" data-validate="Age is not correct">
 					<span class="label-input">Your age</span>
-					<input class="input" type="text" name="name" placeholder="Enter your age">
+					<input class="input" type="text" name="age" placeholder="Enter your age">
 					<span class="focus-input"></span>
 				</div>
 
@@ -95,7 +95,7 @@
 				<div class="question1">
 					<span class="lbl-question">1. Are you aware of the Grievance Procedure for Employees in POWERGRID?</span>
 					<div class="toggle">
-						<input type="radio" name="Q1" value="yes" id="Q1-Yes" checked="checked"/>
+						<input type="radio" name="Q1" value="yes" id="Q1-Yes"/>
 						<label for="Q1-Yes">Yes</label>
 						<input type="radio" name="Q1" value="no" id="Q1-No"/>
 						<label for="Q1-No">No</label>
@@ -183,69 +183,69 @@
 				</div>
 
 				<div class="questions">
-						<span class="lbl-question">5. If you have raised a grievance, under this procedure are you satisfied with the outcome?</span>
-						<div class="toggle">
-								<input type="radio" name="Q5" value="yes" id="Q5-Yes" checked="checked"/>
-								<label for="Q5-Yes">Yes</label>
-								<input type="radio" name="Q5" value="no" id="Q5-No"/>
-								<label for="Q5-No">No</label>
-						</div>
+					<span class="lbl-question">5. If you have raised a grievance, under this procedure are you satisfied with the outcome?</span>
+					<div class="toggle">
+							<input type="radio" name="Q5" value="yes" id="Q5-Yes" checked="checked"/>
+							<label for="Q5-Yes">Yes</label>
+							<input type="radio" name="Q5" value="no" id="Q5-No"/>
+							<label for="Q5-No">No</label>
+					</div>
 				</div>
 
 				<div class="questions">
-						<span class="lbl-question">6. Kindly give the reason, for not being satisfied with the outcome of the grievance.</span>
-						<div>
-							<label class="radio">
-								<input type="radio" name="Q6" value="1" checked>
-								<span>Proper procedure not followed</span>
-							</label>
-							<label class="radio">
-								<input type="radio" name="Q6" value="2">
-								<span>Delay in redressal of grievance</span>
-							</label>
-							<label class="radio">
-								<input type="radio" name="Q6" value="3">
-								<span>I was not called to explain myself</span>
-							</label>
-							<label class="radio">
-									<input type="radio" name="Q6" value="4">
-									<span>Any other</span>
-							</label>
-						</div>
+					<span class="lbl-question">6. Kindly give the reason, for not being satisfied with the outcome of the grievance.</span>
+					<div>
+						<label class="radio">
+							<input type="radio" name="Q6" value="1" checked>
+							<span>Proper procedure not followed</span>
+						</label>
+						<label class="radio">
+							<input type="radio" name="Q6" value="2">
+							<span>Delay in redressal of grievance</span>
+						</label>
+						<label class="radio">
+							<input type="radio" name="Q6" value="3">
+							<span>I was not called to explain myself</span>
+						</label>
+						<label class="radio">
+								<input type="radio" name="Q6" value="4">
+								<span>Any other</span>
+						</label>
+					</div>
 				</div>
 
 				<div class="questions">
-						<span class="lbl-question">7. Reasons why you never raised a grievance under the grievance redressal procedure?</span>
-						<div>
-							<label class="radio">
-								<input type="radio" name="Q7" value="1" checked>
-								<span>I was not aware of the grievance procedure</span>
-							</label>
-							<label class="radio">
-								<input type="radio" name="Q7" value="2">
-								<span>Grievances are mostly resolved through personal interactions</span>
-							</label>
-							<label class="radio">
-								<input type="radio" name="Q7" value="3">
-								<span>Rigidity / Inflexibility in the system</span>
-							</label>
-							<label class="radio">
-									<input type="radio" name="Q7" value="4">
-									<span>Any other</span>
-							</label>
-						</div>
+					<span class="lbl-question">7. Reasons why you never raised a grievance under the grievance redressal procedure?</span>
+					<div>
+						<label class="radio">
+							<input type="radio" name="Q7" value="1" checked>
+							<span>I was not aware of the grievance procedure</span>
+						</label>
+						<label class="radio">
+							<input type="radio" name="Q7" value="2">
+							<span>Grievances are mostly resolved through personal interactions</span>
+						</label>
+						<label class="radio">
+							<input type="radio" name="Q7" value="3">
+							<span>Rigidity / Inflexibility in the system</span>
+						</label>
+						<label class="radio">
+								<input type="radio" name="Q7" value="4">
+								<span>Any other</span>
+						</label>
+					</div>
 				</div>
 
 				<div class="questions">
-						<span class="lbl-question">8. Has anyone in your seniors / peer group / juniors ever raised a grievance?</span>
-						<div class="toggle">
-								<input type="radio" name="Q8" value="yes" id="Q8-Yes" checked="checked"/>
-								<label for="Q8-Yes">Yes</label>
-								<input type="radio" name="Q8" value="no" id="Q8-No"/>
-								<label for="Q8-No">No</label>
-								<input type="radio" name="Q8" value="not aware" id="Q8-Not-Aware"/>
-								<label for="Q8-Not-Aware">Not aware</label>
-						</div>
+					<span class="lbl-question">8. Has anyone in your seniors / peer group / juniors ever raised a grievance?</span>
+					<div class="toggle">
+							<input type="radio" name="Q8" value="yes" id="Q8-Yes" checked="checked"/>
+							<label for="Q8-Yes">Yes</label>
+							<input type="radio" name="Q8" value="no" id="Q8-No"/>
+							<label for="Q8-No">No</label>
+							<input type="radio" name="Q8" value="not aware" id="Q8-Not-Aware"/>
+							<label for="Q8-Not-Aware">Not aware</label>
+					</div>
 				</div>
 
 				<div class="questions">
@@ -318,9 +318,7 @@
 					<div class="wrap-form-btn">
 						<div class="form-bgbtn"></div>
 						<button class="form-btn">
-							<span>
-								Submit
-							</span>
+							<span> Submit </span>
 						</button>
 					</div>
 				</div>
@@ -332,9 +330,9 @@
 	<div id="dropDownSelect1"></div>
 
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!-- <script src="vendor/animsition/js/animsition.min.js"></script> -->
+	<!-- <script src="vendor/bootstrap/js/popper.js"></script> -->
+	<!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
 	<script src="vendor/select2/select2.min.js"></script>
 	<script>
 		$(".selection-2").select2({
@@ -343,22 +341,6 @@
 		});
 	</script>
 <!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
-
 </body>
 </html>
