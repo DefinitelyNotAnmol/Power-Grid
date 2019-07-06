@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-	<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" >
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
@@ -27,9 +27,9 @@
 
 				<div class="person-details">
 					<span class="label-input">Region</span>
-					<div>
+					<div class="validate-input" data-validate="Please select grade">
 						<select class="selection-2" name="grade" id="grade">
-							<option selected disabled>Select your grade</option>
+							<option selected value=" ">Select your grade</option>
 							<option value="E2">E2</option>
 							<option value="E3">E3</option>
 							<option value="E4">E4</option>
@@ -63,9 +63,9 @@
 
 				<div class="person-details">
 					<span class="label-input">Region</span>
-					<div>
+					<div class="validate-input" data-validate="Please select your region">
 						<select class="selection-2" name="region" id="region">
-							<option selected disabled>Select your region</option>
+							<option selected value=" ">Select your region</option>
 							<option value="CC">CC</option>
 							<option value="NR1">NR-I</option>
 							<option value="NR2">NR-II</option>
@@ -88,7 +88,7 @@
 				<div class="question1">
 					<span class="lbl-question">1. Are you aware of the Grievance Procedure for Employees in POWERGRID?</span>
 					<div class="toggle">
-						<input type="radio" name="Q1" value="yes" id="Q1-Yes"/>
+						<input type="radio" name="Q1" value="yes" id="Q1-Yes" checked="checked"/>
 						<label for="Q1-Yes">Yes</label>
 						<input type="radio" name="Q1" value="no" id="Q1-No"/>
 						<label for="Q1-No">No</label>

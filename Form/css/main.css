@@ -303,6 +303,10 @@ textarea.input {
     transition: all 0.4s;
 }
 
+.form-bgbtn:hover {
+    background: #678fec;
+}
+
 .form-btn {
     display: -webkit-box;
     display: -webkit-flex;
