@@ -722,3 +722,11 @@ ul.checkbox li input[type="checkbox"]:focus + label {
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
 }
+
+/*------------------------------------------------------------------
+[ Disable question ]*/
+
+.disabled {
+    /* color: #dadada; */
+    opacity: 0.3;
+}
