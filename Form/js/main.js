@@ -135,13 +135,21 @@
         if ($('input[name="Q3"]:checked').val() == "no") {
             Q4disable();
             Q5disable();
-            Q6disable();
+            // Q6disable();
             Q7enable();
         } else if ($('input[name="Q3"]:checked').val() == "yes") {
             Q4enable();
             Q5enable();
-            Q6enable();
+            // Q6enable();
             Q7disable();
+        }
+    });
+
+    $('.Q5 .toggle').click(function() {
+        if ($('input[name="Q5"]:checked').val() == "no") {
+            Q6enable();
+        } else if ($('input[name="Q5"]:checked').val() == "yes") {
+            Q6disable();
         }
     });
 
