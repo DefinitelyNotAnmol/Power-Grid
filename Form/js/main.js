@@ -1,8 +1,7 @@
 
 (function ($) {
     "use strict";
-    /*==================================================================
-    [ Focus ]*/
+    //Focus
     $('.input').each(function(){
         $(this).on('blur', function(){
             if($(this).val().trim() != "") {
@@ -14,8 +13,7 @@
         })    
     })
   
-    /*==================================================================
-    [ Validate ]*/
+    //Validation for first three inputs
     var age = $('.validate-input input[name="age"]');
     var grade = $('.validate-input #grade');
     var region = $('.validate-input #region');
