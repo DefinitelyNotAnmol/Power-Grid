@@ -155,30 +155,53 @@
     }
 
     // Triggers
+    $('#Q1-Yes').click(function() {
+
+    });
+
+    $('#Q1-No').click(function() {
+
+    });
+
+    $('#Q2-Yes').click(function() {
+
+    });
+
     $("#Q2-No").click(function() {
-        $('#Q3-No').prop("checked", true);
-        Q4disable();
-        Q5disable();
-        Q6disable();
-        Q7enable();
-        Q8enable();
+
+    });
+
+    $('#Q3-Yes').click(function() {
+
+    });
+
+    $('#Q3-No').click(function() {
+
+    });
+
+    $('#5-Yes').click(function() {
+
+    });
+
+    $('#Q5-No').click(function() {
+        
     });
     
-    $(".Q3 .toggle").click(function() {
-        if ($('input[name="Q3"]:checked').val() == "no") {
-            Q4disable();
-            Q5disable();
-            Q6disable();
-            Q7disable();
-            Q8enable();
-        } else if ($('input[name="Q3"]:checked').val() == "yes") {
-            Q4enable();
-            Q5enable();
-            // Q6enable();
-            Q7enable();
-            Q8disable();
-        }
-    });
+    // $(".Q3 .toggle").click(function() {
+    //     if ($('input[name="Q3"]:checked').val() == "no") {
+    //         Q4disable();
+    //         Q5disable();
+    //         Q6disable();
+    //         Q7disable();
+    //         Q8enable();
+    //     } else if ($('input[name="Q3"]:checked').val() == "yes") {
+    //         Q4enable();
+    //         Q5enable();
+    //         // Q6enable();
+    //         Q7enable();
+    //         Q8disable();
+    //     }
+    // });
 
     $('.Q5 .toggle').click(function() {
         if ($('input[name="Q5"]:checked').val() == "no") {
