@@ -36,7 +36,7 @@ body, html {
 
 
 /*---------------------------------------------*/
-a {
+/* a {
 	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
@@ -54,26 +54,26 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-}
+} */
 
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
+/* h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
-}
+} */
 
-p {
+/* p {
 	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
 	margin: 0px;
-}
-
+} */
+/* 
 ul, li {
 	margin: 0px;
 	list-style-type: none;
-}
+} */
 
 
 /*---------------------------------------------*/
@@ -82,34 +82,34 @@ input {
 	border: none;
 }
 
-textarea {
+/* textarea {
     outline: none;
     border: none;
 }
 
 textarea:focus, input:focus {
     border-color: transparent !important;
-}
+} */
 
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; }
 input:focus::-moz-placeholder { color:transparent; }
 input:focus:-ms-input-placeholder { color:transparent; }
 
-textarea:focus::-webkit-input-placeholder { color:transparent; }
+/* textarea:focus::-webkit-input-placeholder { color:transparent; }
 textarea:focus:-moz-placeholder { color:transparent; }
 textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; } */
 
 input::-webkit-input-placeholder { color: #adadad;}
 input:-moz-placeholder { color: #adadad;}
 input::-moz-placeholder { color: #adadad;}
 input:-ms-input-placeholder { color: #adadad;}
 
-textarea::-webkit-input-placeholder { color: #adadad;}
+/* textarea::-webkit-input-placeholder { color: #adadad;}
 textarea:-moz-placeholder { color: #adadad;}
 textarea::-moz-placeholder { color: #adadad;}
-textarea:-ms-input-placeholder { color: #adadad;}
+textarea:-ms-input-placeholder { color: #adadad;} */
 
 /*---------------------------------------------*/
 button {
@@ -118,19 +118,11 @@ button {
 	background: transparent;
 }
 
-button:hover {
-	cursor: pointer;
-}
-
-iframe {
-	border: none !important;
-}
+button:hover { cursor: pointer; }
 
 
 /*---------------------------------------------*/
-.container {
-    max-width: 100%;
-}
+.container { max-width: 100%; }
 
 
 /*------------------------------------------------------------------
@@ -163,9 +155,7 @@ iframe {
 
 /*------------------------------------------------------------------
 [ Form ]*/
-.form {
-    width: 100%;
-}
+.form { width: 100%; }
 
 .form-title {
     display: block;
@@ -246,23 +236,17 @@ iframe {
 
 
 /*---------------------------------------------*/
-input.input {
-    height: 32px;
-}
-
+input.input { height: 32px; }
+/* 
 textarea.input {
     min-height: 110px;
     padding-top: 9px;
     padding-bottom: 5px;
-}
+} */
 
-.input:focus + .focus-input::before {
-    width: 100%;
-}
+.input:focus + .focus-input::before { width: 100%; }
 
-.has-val.input + .focus-input::before {
-    width: 100%;
-}
+.has-val.input + .focus-input::before { width: 100%; }
 
 
 /*------------------------------------------------------------------
@@ -325,16 +309,12 @@ textarea.input {
     line-height: 1.2;
 }
 
-.wrap-form-btn:hover .form-bgbtn {
-    left: 0;
-}
+.wrap-form-btn:hover .form-bgbtn { left: 0; }
 
 /*------------------------------------------------------------------
 [ Alert Validate ]*/
 
-.validate-input {
-    position: relative;
-}
+.validate-input { position: relative; }
   
 .alert-validate::before {
     content: attr(data-validate);
@@ -481,15 +461,6 @@ textarea.input {
     color: #333333;
     line-height: 1.2;
 }
-/* 
-.select2-search--dropdown .select2-search__field {
-    border: 1px solid #aaa;
-    outline: none;
-    font-family: Poppins-Regular;
-    font-size: 15px;
-    color: #333333;
-    line-height: 1.2;
-} */
 
 .lbl-question {
     font-family: Poppins-Regular;
@@ -528,12 +499,14 @@ textarea.input {
     align-items: stretch;
     color: #adadad;
 }
+
 .toggle input {
     width: 0;
     height: 0;
     position: absolute;
     left: -9999px;
 }
+
 .toggle input + label {
     margin: 0;
     padding: 1.5rem 2rem;
@@ -543,23 +516,29 @@ textarea.input {
     border: solid 1px #DDD;
     background-color: #FFF;
     font-size: 1rem;
-    line-height: 10%;
+    line-height: 100%;
     font-weight: 600;
     text-align: center;
     box-shadow: 0 0 0 #4B9DEA;
     transition: border-color .15s ease-out,  color .25s ease-out,  background-color .15s ease-out, box-shadow .15s ease-out;
 }
+
+.yesno { line-height: 10% !important; }
+
 .toggle input + label:first-of-type {
     border-radius: 10px 0 0 10px;
     border-right: none;
 }
+
 .toggle input + label:last-of-type {
     border-radius: 0 10px 10px 0;
     border-left: none;
 }
+
 .toggle input:hover + label {
     border-color: #4B9DEA;
 }
+
 .toggle input:checked + label {
     background-color: #4B9DEA;
     color: #FFF;
@@ -567,6 +546,7 @@ textarea.input {
     border-color: #4B9DEA;
     z-index: 1;
 }
+
 .toggle input:focus + label {
     outline: dotted 1px #CCC;
     outline-offset: .45rem;
@@ -586,9 +566,9 @@ ul.checkbox {
     list-style: none;
     padding: 20px;
 }
-ul.checkbox li{
-  display: inline;
-}
+
+ul.checkbox li{ display: inline; }
+
 ul.checkbox li label{
     display: inline-block;
     background-color: rgba(255, 255, 255, .9);
@@ -638,16 +618,14 @@ ul.checkbox li input[type="checkbox"]:checked + label {
     transition: all .2s;
 }
 
-ul.checkbox li input[type="checkbox"] {
-  display: absolute;
-}
+ul.checkbox li input[type="checkbox"] { display: absolute; }
+
 ul.checkbox li input[type="checkbox"] {
   position: absolute;
   opacity: 0;
 }
-ul.checkbox li input[type="checkbox"]:focus + label {
-  border: 2px solid #4b9dea;
-}
+
+ul.checkbox li input[type="checkbox"]:focus + label { border: 2px solid #4b9dea; }
 
 /*------------------------------------------------------------------
 [ Radio Buttons ]*/
@@ -661,9 +639,9 @@ ul.checkbox li input[type="checkbox"]:focus + label {
     max-width: 400px;
     color: #adadad;
 }
-.radio input {
-    display: none;
-}
+
+.radio input { display: none; } 
+
 .radio input + span {
     line-height: 22px;
     height: 22px;
@@ -671,9 +649,9 @@ ul.checkbox li input[type="checkbox"]:focus + label {
     display: block;
     position: relative;
 }
-.radio input + span:not(:empty) {
-    padding-left: 30px;
-}
+
+.radio input + span:not(:empty) { padding-left: 30px; }
+
 .radio input + span:before, .radio input + span:after {
     content: '';
     width: 22px;
@@ -690,6 +668,7 @@ ul.checkbox li input[type="checkbox"]:focus + label {
     transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
     transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
 }
+
 .radio input + span:after {
     background: #fff;
     -webkit-transform: scale(0.78);
@@ -698,11 +677,13 @@ ul.checkbox li input[type="checkbox"]:focus + label {
     transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
     transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4), -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
 }
+
 .radio input:checked + span:before {
     -webkit-transform: scale(1.04);
             transform: scale(1.04);
     background: #5D9BFB;
 }
+
 .radio input:checked + span:after {
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
@@ -710,23 +691,23 @@ ul.checkbox li input[type="checkbox"]:focus + label {
     transition: transform .3s ease;
     transition: transform .3s ease, -webkit-transform .3s ease;
 } 
+
 .radio:hover input + span:before {
     -webkit-transform: scale(0.92);
             transform: scale(0.92);
 }
+
 .radio:hover input + span:after {
     -webkit-transform: scale(0.74);
             transform: scale(0.74);
 }
+
 .radio:hover input:checked + span:after {
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
 }
 
+
 /*------------------------------------------------------------------
 [ Disable question ]*/
-
-.disabled {
-    /* color: #dadada; */
-    opacity: 0.3;
-}
+.disabled { opacity: 0.3; }

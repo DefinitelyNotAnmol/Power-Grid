@@ -46,6 +46,7 @@
         });
     });
 
+    //Question's Toggle Functions
     function Q4disable() {
         disableQuestion($('.Q4'));
         $('.Q4').each(function() {
@@ -77,8 +78,8 @@
 
     function Q6disable() {
         disableQuestion($('.Q6'));
-        $('#Q6-1').prop("checked", false);
         $('.Q6 .radio').each(function() {
+            $('.Q6 .radio input[type="radio"]').prop("checked", false);
             $('.Q6 .radio input[type="radio"]').prop("disabled", true);
         });
     }
@@ -94,54 +95,79 @@
     function Q7disable() {
         disableQuestion($('.Q7'));
         $('#Q7-1').prop("checked", false);
-        $('.Q7 .radio').each(function() {
-            $('.Q7 .radio input[type="radio"]').prop("checked", false);
-            $('.Q7 .radio input[type="radio"]').prop("disabled", true);
-        });
+
+        $('#Q7-1').prop("disabled", true);
+        $('#Q7-2').prop("disabled", true);
+        $('#Q7-3').prop("disabled", true);
+        $('#Q7-4').prop("disabled", true);
+        $('#Q7-5').prop("disabled", true);
     }
 
     function Q7enable() {
         enableQuestion($('.Q7'));
         $('#Q7-1').prop("checked", true);
-        $('.Q7 .radio').each(function() {
-            $('.Q7 .radio input[type="radio"]').prop("disabled", false);
+
+        $('#Q7-1').prop("disabled", false);
+        $('#Q7-2').prop("disabled", false);
+        $('#Q7-3').prop("disabled", false);
+        $('#Q7-4').prop("disabled", false);
+        $('#Q7-5').prop("disabled", false);
+    }
+
+    function Q8disable() {
+        disableQuestion($('.Q8'));
+        $('#Q8-1').prop("checked", false);
+        $('.Q8 .radio').each(function() {
+            $('.Q8 .radio input[type="radio"]').prop("checked", false);
+            $('.Q8.radio input[type="radio"]').prop("disabled", true);
+        });
+    }
+
+    function Q8enable() {
+        enableQuestion($('.Q8'));
+        $('#Q8-1').prop("checked", true);
+        $('.Q8 .radio').each(function() {
+            $('.Q8 .radio input[type="radio"]').prop("disabled", false);
         });
     }
 
     function Q9disable() {
         disableQuestion($('.Q9'));
-        $('.Q9').each(function() {
-            $('.Q9').prop("checked", false);
-            $('.Q9').prop("disabled", true);
-        });
+        $('#Q9-Yes').prop("checked", false);
+        $('#Q9-Yes').prop("disabled", true);
+        $('#Q9-No').prop("disabled", true);
     }
 
     function Q9enable() {
         enableQuestion($('.Q9'));
-        $('.Q9').each(function() {
-            $('.Q9').prop("disabled", false);
-        });
+        $('#Q9-Yes').prop("checked", true);
+        $('#Q9-Yes').prop("disabled", false);
+        $('#Q9-No').prop("disabled", false);
     }
 
+    // Triggers
     $("#Q2-No").click(function() {
         $('#Q3-No').prop("checked", true);
         Q4disable();
         Q5disable();
         Q6disable();
         Q7enable();
+        Q8enable();
     });
     
     $(".Q3 .toggle").click(function() {
         if ($('input[name="Q3"]:checked').val() == "no") {
             Q4disable();
             Q5disable();
-            // Q6disable();
-            Q7enable();
+            Q6disable();
+            Q7disable();
+            Q8enable();
         } else if ($('input[name="Q3"]:checked').val() == "yes") {
             Q4enable();
             Q5enable();
             // Q6enable();
-            Q7disable();
+            Q7enable();
+            Q8disable();
         }
     });
 
@@ -150,14 +176,6 @@
             Q6enable();
         } else if ($('input[name="Q5"]:checked').val() == "yes") {
             Q6disable();
-        }
-    });
-
-    $('.Q8 .toggle').click(function(){
-        if ($('input[name="Q8"]:checked').val() == "no" || $('input[name="Q8"]:checked').val() == "not aware") {
-            Q9disable();
-        } else if ($('input[name="Q8"]:checked').val() == "yes") {
-            Q9enable();
         }
     });
     
