@@ -35,7 +35,27 @@
             check = false;
         }
 
+        if ($('.Q4 input[type="checkbox"]:checked').length == 0) {
+            $('.Q4 .checkbox input[type="checkbox"]').each(function() {
+                $('.Q4 ul.checkbox li label').css("color", "#c80000");
+            });
+            check = false;
+        }
+
         return check;
+    });
+
+    $('.Q4').click(function() {
+        if ($('.Q4 input[type="checkbox"]:checked').length >= 1) {
+            $('.Q4 ul.checkbox li label').css("color", "#adadad");
+            $('.Q4 input[type="checkbox"]:checked').each(function() {
+                $('.Q4 ul.checkbox li input[type="checkbox"]:checked + label').css("color", "white");
+            });
+        }
+
+        $('.Q4 input[type="checkbox"]:checked').click(function() {
+            $('.Q4 ul.checkbox li label').css("color", "#adadad");
+        });
     });
 
     $('.validate-form .input').each(function() {
