@@ -63,6 +63,7 @@
     function Q5disable() {
         disableQuestion($('.Q5'));
         $('#Q5-Yes').prop("checked", false);
+        $('#Q5-No').prop("checked", false);
         $('#Q5-Yes').prop("disabled", true);
         $('#Q5-No').prop("disabled", true);
     }
@@ -110,7 +111,7 @@
         disableQuestion($('.Q8'));
         $('.Q8 .radio').each(function() {
             $('.Q8 .radio input[type="radio"]').prop("checked", false);
-            $('.Q8.radio input[type="radio"]').prop("disabled", true);
+            $('.Q8 .radio input[type="radio"]').prop("disabled", true);
         });
     }
 
@@ -125,6 +126,7 @@
     function Q9disable() {
         disableQuestion($('.Q9'));
         $('#Q9-Yes').prop("checked", false);
+        $('#Q9-No').prop("checked", false);
         $('#Q9-Yes').prop("disabled", true);
         $('#Q9-No').prop("disabled", true);
     }
@@ -153,36 +155,30 @@
     }
 
     // Triggers
-    $('#Q1-Yes').click(function() {
-
-    });
-
-    $('#Q1-No').click(function() {
-
-    });
-
-    $('#Q2-Yes').click(function() {
-
-    });
-
-    $("#Q2-No").click(function() {
-
-    });
-
     $('#Q3-Yes').click(function() {
-
+        Q4enable();
+        Q5enable();
+        Q6disable();
+        Q7enable();
+        Q8disable();
+        Q9enable();
     });
 
     $('#Q3-No').click(function() {
-
+        Q4disable();
+        Q5disable();
+        Q6disable();
+        Q7disable();
+        Q8enable();
+        Q9disable();
     });
 
-    $('#5-Yes').click(function() {
-
+    $('#Q5-Yes').click(function() {
+        Q6disable();
     });
 
     $('#Q5-No').click(function() {
-        
+        Q6enable();
     });
     
     function disableQuestion(input) {
