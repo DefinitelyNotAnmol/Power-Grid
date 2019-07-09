@@ -1,0 +1,320 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Powergrid Grievance Procedure Survey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>*@
+    <div class="container">
+        <div class="wrap">
+            <form class="form validate-form">
+                <span class="form-title">
+                    Survey
+                </span>
+
+                <div class="person-details validate-input" data-validate="Age is not correct">
+                    <span class="label-input">Your age</span>
+                    <input class="input" type="text" name="age" placeholder="Enter your age">
+                    <span class="focus-input"></span>
+                </div>
+
+                <div class="person-details">
+                    <span class="label-input">Region</span>
+                    <div class="validate-input" data-validate="Please select grade">
+                        <select class="selection-2" name="grade" id="grade">
+                            <option selected value=" ">Select your grade</option>
+                            <option value="E2">E2</option>
+                            <option value="E3">E3</option>
+                            <option value="E4">E4</option>
+                            <option value="E5">E5</option>
+                            <option value="E6">E6</option>
+                            <option value="E7">E7</option>
+                            <option value="E8">E8 - GM</option>
+
+                            <option value="S1">S1</option>
+                            <option value="S2">S2</option>
+                            <option value="S3">S3</option>
+                            <option value="S4">S4</option>
+                            <option value="SSG">SSG</option>
+
+                            <option value="W0">W0</option>
+                            <option value="W1">W1</option>
+                            <option value="W2">W2</option>
+                            <option value="W3">W3</option>
+                            <option value="W4">W4</option>
+                            <option value="W5">W5</option>
+                            <option value="W6">W6</option>
+                            <option value="W8">W8</option>
+                            <option value="W9">W9</option>
+                            <option value="W10">W10</option>
+                            <option value="W11">W11</option>
+                            <option value="WSG">WSG</option>
+                        </select>
+                    </div>
+                    <span class="focus-input"></span>
+                </div>
+
+                <div class="person-details">
+                    <span class="label-input">Region</span>
+                    <div class="validate-input" data-validate="Please select your region">
+                        <select class="selection-2" name="region" id="region">
+                            <option selected value=" ">Select your region</option>
+                            <option value="CC">CC</option>
+                            <option value="NR1">NR-I</option>
+                            <option value="NR2">NR-II</option>
+                            <option value="NR3">NR-III</option>
+                            <option value="ER1">ER-I</option>
+                            <option value="ER2">ER-II</option>
+                            <option value="NER">NER</option>
+                            <option value="ODISHA">Odisha Project</option>
+                            <option value="SR1">SR-I</option>
+                            <option value="SR2">SR-II</option>
+                            <option value="WR1">WR-I</option>
+                            <option value="WR2">WR-II</option>
+                            <option value="RPTHVDC">RPTHVDC</option>
+                            <option value="NERPSIP">NERPSIP</option>
+                        </select>
+                    </div>
+                    <span class="focus-input"></span>
+                </div>
+
+                <div class="question1">
+                    <span class="lbl-question">1. Are you aware of the Grievance Procedure for Employees in POWERGRID?</span>
+                    <div class="toggle">
+                        <input type="radio" name="Q1" value="yes" id="Q1-Yes" checked="checked">
+                        <label for="Q1-Yes" class="yesno">Yes</label>
+                        <input type="radio" name="Q1" value="no" id="Q1-No">
+                        <label for="Q1-No" class="yesno">No</label>
+                    </div>
+                </div>
+
+                <div class="questions Q2">
+                    <span class="lbl-question">2. Have you ever felt the need to raise a grievance?</span>
+                    <div class="toggle">
+                        <input type="radio" name="Q2" value="yes" id="Q2-Yes" checked="checked">
+                        <label for="Q2-Yes" class="yesno">Yes</label>
+                        <input type="radio" name="Q2" value="no" id="Q2-No">
+                        <label for="Q2-No" class="yesno">No</label>
+                    </div>
+                </div>
+
+                <div class="questions Q3">
+                    <span class="lbl-question">3. Have you ever raised a grievance using the Grievance Procedure for Employees in POWERGRID?</span>
+                    <div class="toggle">
+                        <input type="radio" name="Q3" value="yes" id="Q3-Yes" checked="checked">
+                        <label for="Q3-Yes" class="yesno">Yes</label>
+                        <input type="radio" name="Q3" value="no" id="Q3-No">
+                        <label for="Q3-No" class="yesno">No</label>
+                    </div>
+                </div>
+
+                <div class="questions Q4">
+                    <span class="lbl-question">4. On what subject did you raise the grievance?</span>
+                    <div class="checkbox-question">
+                        <ul class="checkbox">
+                            <li>
+                                <input type="checkbox" id="Q4-cbx1" value="Salary Payment" class="Q4">
+                                <label for="Q4-cbx1">Salary Payment</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Q4-cbx2" value="Recovery of Dues" class="Q4">
+                                <label for="Q4-cbx2">Recovery of Dues</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Q4-cbx3" value="Increment" class="Q4">
+                                <label for="Q4-cbx3">Increment</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Q4-cbx4" value="Working Conditions" class="Q4">
+                                <label for="Q4-cbx4">Working Conditions</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Q4-cbx5" value="Leave" class="Q4">
+                                <label for="Q4-cbx5">Leave</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Q4-cbx6" value="Allotment of residential quarters" class="Q4">
+                                <label for="Q4-cbx6">Allotment of residential quarters</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Q4-cbx7" value="Medical Facilities" class="Q4">
+                                <label for="Q4-cbx7">Medical Facilities</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Q4-cbx8" value="Non-extension of benefits under rules" class="Q4">
+                                <label for="Q4-cbx8">Non-extension of benefits under rules</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Q4-cbx9" value="Transfer" class="Q4">
+                                <label for="Q4-cbx9">Transfer</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Q4-cbx10" value="Seniority" class="Q4">
+                                <label for="Q4-cbx10">Seniority (for only those areas where relevant)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Q4-cbx11" value="Promotion" class="Q4">
+                                <label for="Q4-cbx11">Promotion</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Q4-cbx12" value="Pay Fixation" class="Q4">
+                                <label for="Q4-cbx12">Pay Fixation</label>
+                            </li>
+                            <li class="other1">
+                                <input type="checkbox" id="Q4-cbx13" value="Other" class="Q4">
+                                <label for="Q4-cbx13">Others, if any</label>
+                                <!-- <input class="input" type="text" name="age" placeholder="" id="other1" disabled> -->
+                                <!-- <span class="focus-input"></span> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="questions Q5">
+                    <span class="lbl-question">5. Under this procedure are you satisfied with the outcome?</span>
+                    <div class="toggle">
+                        <input type="radio" name="Q5" value="yes" id="Q5-Yes" checked="checked">
+                        <label for="Q5-Yes" class="yesno">Yes</label>
+                        <input type="radio" name="Q5" value="no" id="Q5-No">
+                        <label for="Q5-No" class="yesno">No</label>
+                    </div>
+                </div>
+
+                <div class="questions Q6 disabled">
+                    <span class="lbl-question">6. Kindly give the reason, for not being satisfied with the outcome of the grievance.</span>
+                    <div>
+                        <label class="radio">
+                            <input type="radio" name="Q6" value="1" id="Q6-1" disabled>
+                            <span>Proper procedure not followed</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Q6" value="2" id="Q6-2" disabled>
+                            <span>Delay in redressal of grievance</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Q6" value="3" id="Q6-3" disabled>
+                            <span>I was not called to explain myself</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Q6" value="4" id="Q6-4" disabled>
+                            <span>Any other</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="questions Q7">
+                    <span class="lbl-question">7. Kindly rate your level of satisfaction with the grievance redressal mechanism.</span>
+                    <div class="toggle">
+                        <input type="radio" name="Q7" value="Very Satisfied" id="Q7-1" class="btn" checked>
+                        <label for="Q7-1">Very Satisfied</label>
+                        <input type="radio" name="Q7" value="Satisfied" id="Q7-2" class="btn">
+                        <label for="Q7-2">Satisfied</label>
+                        <input type="radio" name="Q7" value="Neither Satisfied not Dissatisfied" id="Q7-3" class="btn">
+                        <label for="Q7-3">Neither satisfied nor dissatisfied</label>
+                        <input type="radio" name="Q7" value="Dissatisfied" id="Q7-4" class="btn">
+                        <label for="Q7-4">dissatisfied</label>
+                        <input type="radio" name="Q7" value="Very Dissatisfied" id="Q7-5" class="btn">
+                        <label for="Q7-5">Very dissatisfied</label>
+                    </div>
+                </div>
+
+                <div class="questions Q8 disabled">
+                    <span class="lbl-question">8. Reasons why you never raised a grievance under the grievance redressal procedure?</span>
+                    <div>
+                        <label class="radio">
+                            <input type="radio" name="Q8" value="1" id="Q8-1" disabled>
+                            <span>I was not aware of the grievance procedure</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Q8" value="2" id="Q8-2" disabled>
+                            <span>Grievances are mostly resolved through personal interactions</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Q8" value="3" id="Q8-3" disabled>
+                            <span>Rigidity / Inflexibility in the system</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Q8" value="4" id="Q8-4" disabled>
+                            <span>Any other</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="questions Q9">
+                    <span class="lbl-question">9. Whether raising or carrying a grievance till its resolution is affecting your work? </span>
+                    <div class="toggle">
+                        <input type="radio" name="Q9" value="yes" id="Q9-Yes" checked="checked">
+                        <label for="Q9-Yes" class="yesno">Yes</label>
+                        <input type="radio" name="Q9" value="no" id="Q9-No">
+                        <label for="Q9-No" class="yesno">No</label>
+                    </div>
+                </div>
+
+                <div class="questions Q10">
+                    <span class="lbl-question">10. Suggestions / Recommendations for improvement if any</span>
+                    <div>
+                        <label class="radio">
+                            <input type="radio" name="Q10" value="1" id="Q10-1" checked>
+                            <span>Time period of resolution to be shortened</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Q10" value="2" id="Q10-2">
+                            <span>Additional areas for raising grievance to be included</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Q10" value="3" id="Q10-3">
+                            <span>Hierarchy of resolution to be shortened</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Q10" value="4" id="Q10-4">
+                            <span>Happy with the policy</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Q10" value="5" id="Q10-5">
+                            <span>Facility for online grievance to be provided</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="Q10" value="6" id="Q10-6">
+                            <span>Any other</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="container-form-btn">
+                    <div class="wrap-form-btn">
+                        <div class="form-bgbtn"></div>
+                        <button class="form-btn">
+                            <span> Submit </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Code for drop down menu -->
+    <div id="dropDownSelect1"></div>
+
+    @*<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script>
+        $(".selection-2").select2({
+            minimumResultsForSearch: 30,
+            dropdownParent: $('#dropDownSelect1')
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>*@
