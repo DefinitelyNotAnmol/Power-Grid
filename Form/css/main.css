@@ -82,12 +82,12 @@ input {
 	border: none;
 }
 
-/* textarea {
+textarea {
     outline: none;
     border: none;
 }
 
-textarea:focus, input:focus {
+/* textarea:focus, input:focus {
     border-color: transparent !important;
 } */
 
@@ -96,20 +96,20 @@ input:focus:-moz-placeholder { color:transparent; }
 input:focus::-moz-placeholder { color:transparent; }
 input:focus:-ms-input-placeholder { color:transparent; }
 
-/* textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus::-webkit-input-placeholder { color:transparent; }
 textarea:focus:-moz-placeholder { color:transparent; }
 textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; } */
+textarea:focus:-ms-input-placeholder { color:transparent; }
 
 input::-webkit-input-placeholder { color: #adadad;}
 input:-moz-placeholder { color: #adadad;}
 input::-moz-placeholder { color: #adadad;}
 input:-ms-input-placeholder { color: #adadad;}
 
-/* textarea::-webkit-input-placeholder { color: #adadad;}
+textarea::-webkit-input-placeholder { color: #adadad;}
 textarea:-moz-placeholder { color: #adadad;}
 textarea::-moz-placeholder { color: #adadad;}
-textarea:-ms-input-placeholder { color: #adadad;} */
+textarea:-ms-input-placeholder { color: #adadad;}
 
 /*---------------------------------------------*/
 button {
@@ -711,3 +711,15 @@ ul.checkbox li input[type="checkbox"]:focus + label { border: 2px solid #4b9dea;
 /*------------------------------------------------------------------
 [ Disable question ]*/
 .disabled { opacity: 0.3; }
+
+.other {
+    width: 50%;
+    height: 50px;;
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #adadad;
+    border-radius: 25px;
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    padding: 15px;
+    margin: 3px 0px;
+}

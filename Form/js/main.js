@@ -180,6 +180,15 @@
     $('#Q5-No').click(function() {
         Q6enable();
     });
+
+    $('#Q4-cbx13').click(function() {
+        if ($('#Q4-cbx13').prop("checked") == true) {
+            $('.other1').append('<textarea class="input other" name="other" placeholder="Write subject for grievance here..." row="1" column="50"></textarea>');
+            $('.other1 textarea[name="other"]').focus();
+        } else {
+            $('.other1 textarea[name="other"]').remove();
+        }
+    })
     
     function disableQuestion(input) {
         $(input).addClass('disabled');
