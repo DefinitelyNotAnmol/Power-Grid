@@ -209,6 +209,33 @@
             $('.other1 textarea[name="other"]').remove();
         }
     })
+
+    $('.Q6 input[type="radio"][name="Q6"]').change(function() {
+        if ($('#Q6-4').prop("checked") == true) {
+            $('.Q6 .radio-btn').append('<textarea class="input other2" name="other2" placeholder="Write your reasons here..." row="1" column="50"></textarea>');
+            $('.Q6 .radio-btn textarea[name="other2"]').focus();
+        } else {
+            $('.Q6 .radio-btn textarea[name="other2"]').remove();
+        }
+    });
+
+    $('.Q8 input[type="radio"][name="Q8"]').change(function() {
+        if ($('#Q8-4').prop("checked") == true) {
+            $('.Q8 .radio-btn').append('<textarea class="input other2" name="other2" placeholder="Write your reasons here..." row="1" column="50"></textarea>');
+            $('.Q8 .radio-btn textarea[name="other2"]').focus();
+        } else {
+            $('.Q8 .radio-btn textarea[name="other2"]').remove();
+        }
+    });
+
+    $('.Q10 input[type="radio"][name="Q10"]').change(function() {
+        if ($('#Q10-6').prop("checked") == true) {
+            $('.Q10 .radio-btn').append('<textarea class="input other2" name="other2" placeholder="Write your suggestions / recommendations here..." row="1" column="50"></textarea>');
+            $('.Q10 .radio-btn textarea[name="other2"]').focus();
+        } else {
+            $('.Q10 .radio-btn textarea[name="other2"]').remove();
+        }
+    });
     
     function disableQuestion(input) {
         $(input).addClass('disabled');

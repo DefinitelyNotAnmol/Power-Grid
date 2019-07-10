@@ -685,3 +685,15 @@ ul.checkbox li input[type="checkbox"]:focus + label { border: 2px solid #4b9dea;
     padding: 15px;
     margin: 3px 0px;
 }
+
+.other2 {
+    width: 50%;
+    height: 50px;;
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #adadad;
+    border-radius: 25px;
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    padding: 15px;
+    margin: 3px 15px;
+}
