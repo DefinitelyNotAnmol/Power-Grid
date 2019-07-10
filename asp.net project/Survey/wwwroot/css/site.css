@@ -1,29 +1,5 @@
-﻿/*------------------------------------------------------------------
-[ FONT ]*/
-/*@font-face {
-    font-family: Poppins-Regular;
-    src: url('../fonts/poppins/Poppins-Regular.ttf');
-}
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
 
-@font-face {
-    font-family: Poppins-Medium;
-    src: url('../fonts/poppins/Poppins-Medium.ttf');
-}
-
-@font-face {
-    font-family: Poppins-Bold;
-    src: url('../fonts/poppins/Poppins-Bold.ttf');
-}
-
-@font-face {
-    font-family: Poppins-SemiBold;
-    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
-}*/
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
-
-/*------------------------------------------------------------------
-[ RESTYLE TAG ]*/
 * {
     margin: 0px;
     padding: 0px;
@@ -36,48 +12,6 @@ body, html {
     font-weight: 400;
 }
 
-
-/*---------------------------------------------*/
-/* a {
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    line-height: 1.7;
-    color: #666666;
-    margin: 0px;
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-}
-
-a:focus {
-    outline: none !important;
-}
-
-a:hover {
-    text-decoration: none;
-} */
-
-
-/*---------------------------------------------*/
-/* h1,h2,h3,h4,h5,h6 {
-    margin: 0px;
-} */
-
-/* p {
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    line-height: 1.7;
-    color: #666666;
-    margin: 0px;
-} */
-/* 
-ul, li {
-    margin: 0px;
-    list-style-type: none;
-} */
-
-
 /*---------------------------------------------*/
 input {
     outline: none;
@@ -88,10 +22,6 @@ textarea {
     outline: none;
     border: none;
 }
-
-/* textarea:focus, input:focus {
-    border-color: transparent !important;
-} */
 
 input:focus::-webkit-input-placeholder {
     color: transparent;
@@ -167,16 +97,11 @@ button {
     button:hover {
         cursor: pointer;
     }
-
-
-/*---------------------------------------------*/
+    
 .container {
     max-width: 100%;
 }
 
-
-/*------------------------------------------------------------------
-[ Contact ]*/
 .container {
     width: 100%;
     min-height: 100vh;
@@ -193,14 +118,12 @@ button {
 }
 
 .wrap {
-    /* max-width: 1200px; */
     width: 75%;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
     padding: 20px 55px 20px 55px;
 }
-
 
 /*------------------------------------------------------------------
 [ Form ]*/
@@ -218,7 +141,6 @@ button {
     text-align: center;
     padding-bottom: 30px;
 }
-
 
 /*------------------------------------------------------------------
 [ Input ]*/
@@ -242,8 +164,8 @@ button {
 
 .label-input {
     font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 13px;
+    font-weight: 500;
+    font-size: 18px;
     color: #666666;
     line-height: 1.5;
     padding-left: 5px;
@@ -255,7 +177,7 @@ button {
     background: transparent;
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     color: #333333;
     line-height: 1.2;
     padding: 0 5px;
@@ -468,14 +390,11 @@ textarea.input {
         position: relative;
     }
 
-
-        /*------------------------------------------------------------------
-[ in select ]*/
         .select2-container .select2-selection--single .select2-selection__rendered {
             font-family: 'Poppins';
             font-weight: 500;
             font-size: 18px;
-            color: #333333;
+            color: #adadad;
             line-height: 1.2;
             padding-left: 5px;
             background-color: transparent;
@@ -485,7 +404,7 @@ textarea.input {
 /*------------------------------------------------------------------
 [ Dropdown option ]*/
 .select2-container--open .select2-dropdown {
-    z-index: 1251;
+    z-index: 12;
     border: 0px solid #e5e5e5;
     border-radius: 0px;
     background-color: white;
@@ -533,7 +452,7 @@ textarea.input {
     color: #666666;
     line-height: 1.5;
     padding-left: 5px;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .question1 {
@@ -583,9 +502,10 @@ textarea.input {
             display: inline-block;
             border: solid 1px #DDD;
             background-color: #FFF;
-            font-size: 1rem;
-            line-height: 100%;
-            font-weight: 600;
+            font-size: 1.3rem;
+            font-family: 'Poppins';
+            font-weight: 500;
+            line-height: 100%;   
             text-align: center;
             box-shadow: 0 0 0 #4B9DEA;
             transition: border-color .15s ease-out, color .25s ease-out, background-color .15s ease-out, box-shadow .15s ease-out;
@@ -625,6 +545,10 @@ textarea.input {
 
 /*------------------------------------------------------------------
 [ Checkbox Questions ]*/
+.checkbox {
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
 
 .checkbox-question {
     max-width: 1000px;
@@ -710,11 +634,11 @@ ul.checkbox {
 .radio {
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     margin: 13px 20px;
     display: block;
     cursor: pointer;
-    max-width: 400px;
+    max-width: 600px;
     color: #adadad;
 }
 
@@ -803,8 +727,22 @@ ul.checkbox {
     border: 2px solid rgba(139, 139, 139, .3);
     color: #adadad;
     border-radius: 25px;
-    font-family: Poppins-Regular;
+    font-family: 'Poppins';
+    font-weight: 400;
     font-size: 13px;
     padding: 15px;
     margin: 3px 0px;
+}
+
+.other2 {
+    width: 50%;
+    height: 50px;
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #adadad;
+    border-radius: 25px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 13px;
+    padding: 15px;
+    margin: 0px 15px 15px 15px;
 }

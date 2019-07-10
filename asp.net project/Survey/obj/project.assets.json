@@ -12011,11 +12011,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anmoljain/Projects/Survey/Survey/Survey.csproj",
+      "projectUniqueName": "/Users/anmoljain/Desktop/Power-Grid/ASP.net Project/Survey/Survey.csproj",
       "projectName": "Survey",
-      "projectPath": "/Users/anmoljain/Projects/Survey/Survey/Survey.csproj",
+      "projectPath": "/Users/anmoljain/Desktop/Power-Grid/ASP.net Project/Survey/Survey.csproj",
       "packagesPath": "/Users/anmoljain/.nuget/packages/",
-      "outputPath": "/Users/anmoljain/Projects/Survey/Survey/obj/",
+      "outputPath": "/Users/anmoljain/Desktop/Power-Grid/ASP.net Project/Survey/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

@@ -20,7 +20,6 @@
     src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
 }
 
-
 /*------------------------------------------------------------------
 [ RESTYLE TAG ]*/ 
 * {
@@ -44,10 +43,6 @@ textarea {
     outline: none;
     border: none;
 }
-
-/* textarea:focus, input:focus {
-    border-color: transparent !important;
-} */
 
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; }
@@ -78,13 +73,7 @@ button {
 
 button:hover { cursor: pointer; }
 
-
-/*---------------------------------------------*/
 .container { max-width: 100%; }
-
-
-/*------------------------------------------------------------------
-[ Contact ]*/
 
 .container {
     width: 100%;  
@@ -102,14 +91,12 @@ button:hover { cursor: pointer; }
 }
 
 .wrap {
-    /* max-width: 1200px; */
     width: 75%;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
     padding: 20px 55px 20px 55px;
 }
-
 
 /*------------------------------------------------------------------
 [ Form ]*/
@@ -124,7 +111,6 @@ button:hover { cursor: pointer; }
     text-align: center;
     padding-bottom: 30px;
 }
-
 
 /*------------------------------------------------------------------
 [ Input ]*/
@@ -373,7 +359,7 @@ textarea.input {
 .select2-container .select2-selection--single .select2-selection__rendered {
     font-family: Poppins-Medium;
     font-size: 18px;
-    color: #333333;
+    color: #adadad;
     line-height: 1.2;
     padding-left: 5px ;
     background-color: transparent;
@@ -594,7 +580,7 @@ ul.checkbox li input[type="checkbox"]:focus + label { border: 2px solid #4b9dea;
     margin: 13px 20px;
     display: block;
     cursor: pointer;
-    max-width: 400px;
+    max-width: 600px;
     color: #adadad;
 }
 
@@ -676,7 +662,7 @@ ul.checkbox li input[type="checkbox"]:focus + label { border: 2px solid #4b9dea;
 
 .other {
     width: 50%;
-    height: 50px;;
+    height: 50px;
     border: 2px solid rgba(139, 139, 139, .3);
     color: #adadad;
     border-radius: 25px;
@@ -688,7 +674,7 @@ ul.checkbox li input[type="checkbox"]:focus + label { border: 2px solid #4b9dea;
 
 .other2 {
     width: 50%;
-    height: 50px;;
+    height: 50px;
     border: 2px solid rgba(139, 139, 139, .3);
     color: #adadad;
     border-radius: 25px;
