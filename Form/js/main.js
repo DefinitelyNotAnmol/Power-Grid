@@ -158,22 +158,6 @@
         $('#Q9-No').prop("disabled", false);
     }
 
-    function Q10disable() {
-        disableQuestion($('.Q10'));
-        $('.Q10 .radio').each(function() {
-            $('.Q10 .radio input[type="radio"]').prop("checked", false);
-            $('.Q10.radio input[type="radio"]').prop("disabled", true);
-        });
-    }
-
-    function Q10enable() {
-        enableQuestion($('.Q10'));
-        $('#Q10-1').prop("checked", true);
-        $('.Q10 .radio').each(function() {
-            $('.Q10 .radio input[type="radio"]').prop("disabled", false);
-        });
-    }
-
     // Triggers
     $('#Q3-Yes').click(function() {
         Q4enable();
