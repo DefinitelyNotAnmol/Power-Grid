@@ -20,7 +20,7 @@
 
     $('.validate-form').on('submit',function() {
         var check = true;
-        if (parseInt($(age).val(), 10) < 18 || parseInt($(age).val(), 10) > 65 || $(age).val() == "") {
+        if (parseInt($(age).val(), 10) < 21 || parseInt($(age).val(), 10) > 65 || $(age).val() == "") {
             showValidate(age);
             check = false;
         }
