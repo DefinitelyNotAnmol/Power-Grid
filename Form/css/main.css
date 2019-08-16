@@ -457,7 +457,7 @@ textarea.input {
     box-sizing: border-box;
     position: relative;
     display: inline-block;
-    border: solid 1px #DDD;
+    border: solid 1.5px #DDD;
     background-color: #FFF;
     font-size: 1rem;
     line-height: 100%;
@@ -471,6 +471,15 @@ textarea.input {
 
 .toggle input + label:first-of-type {
     border-radius: 10px 0 0 10px;
+    /* border-right: none; */
+}
+
+.toggle input + label:nth-of-type(2) {
+    border-left: none;
+}
+
+.toggle input + label:nth-of-type(3) {
+    border-left: none;
     border-right: none;
 }
 
@@ -495,7 +504,6 @@ textarea.input {
     outline: dotted 1px #CCC;
     outline-offset: .45rem;
 }
-
 
 /*------------------------------------------------------------------
 [ Checkbox Questions ]*/

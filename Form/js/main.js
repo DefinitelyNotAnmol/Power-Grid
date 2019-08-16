@@ -35,12 +35,12 @@
             check = false;
         }
 
-        if ($('.Q4 input[type="checkbox"]:checked').length == 0) {
-            $('.Q4 .checkbox input[type="checkbox"]').each(function() {
-                $('.Q4 ul.checkbox li label').css("color", "#c80000");
-            });
-            check = false;
-        }
+        // if ($('.Q4 input[type="checkbox"]:checked').length == 0) {
+        //     $('.Q4 .checkbox input[type="checkbox"]').each(function() {
+        //         $('.Q4 ul.checkbox li label').css("color", "#c80000");
+        //     });
+        //     check = false;
+        // }
 
         return check;
     });
@@ -52,6 +52,23 @@
     });
 
     //Question's Toggle Functions
+    function Q3disable() {
+        disableQuestion($('.Q3'));
+        $('#Q3-Yes').prop("checked", false);
+        $('#Q3-No').prop("checked", false);
+        $('.Q3').each(function() {
+            $('.Q3').prop("disabled", true);
+        });
+    } 
+
+    function Q3enable() {
+        enableQuestion($('.Q3'));
+
+        $('.Q3').each(function() {
+            $('.Q3').prop("disabled", false);
+        });
+    }
+
     function Q4disable() {
         disableQuestion($('.Q4'));
         $('.Q4').each(function() {
@@ -77,7 +94,7 @@
 
     function Q5enable() {
         enableQuestion($('.Q5'));
-        $('#Q5-Yes').prop("checked", true);
+        // $('#Q5-Yes').prop("checked", true);
         $('#Q5-Yes').prop("disabled", false);
         $('#Q5-No').prop("disabled", false);
     }
@@ -108,7 +125,7 @@
 
     function Q7enable() {
         enableQuestion($('.Q7'));
-        $('#Q7-1').prop("checked", true)
+        // $('#Q7-1').prop("checked", true)
         $('.Q7 .btn').each(function() {
             $('.Q7 .btn').prop("disabled", false);
         });
@@ -140,12 +157,33 @@
 
     function Q9enable() {
         enableQuestion($('.Q9'));
-        $('#Q9-Yes').prop("checked", true);
+        // $('#Q9-Yes').prop("checked", true);
         $('#Q9-Yes').prop("disabled", false);
         $('#Q9-No').prop("disabled", false);
     }
 
     // Triggers
+
+    $('#Q1-Yes').click(function() {
+        Q3enable();
+        Q4enable();
+        Q5enable();
+        Q6enable();
+        Q7enable();
+        Q8enable();
+        Q9enable();
+    });
+
+    $('#Q1-No').click(function() {
+        Q3disable();
+        Q4disable();
+        Q5disable();
+        Q6disable();
+        Q7disable();
+        Q8disable();
+        Q9disable();
+    });
+
     $('#Q3-Yes').click(function() {
         Q4enable();
         Q5enable();
@@ -163,6 +201,18 @@
         Q8enable();
         Q9disable();
     });
+
+    // $('.Q4').click(function() {
+    //     if (('.Q4 ul.checkbox li label').css("color") == "#c80000") {
+    //         $('.Q4 .checkbox input[type="checkbox"]').each(function() {
+    //             if (('.Q4 .checkbox input[type="checkbox"]').prop("checked") == true) {
+    //                 $('.Q4 ul.checkbox li label').css("color", "#ffffff");
+    //             } else {
+    //                 $('.Q4 ul.checkbox li label').css("color", "#adadad");
+    //             }
+    //         });
+    //     }
+    // });
 
     $('#Q5-Yes').click(function() {
         Q6disable();
