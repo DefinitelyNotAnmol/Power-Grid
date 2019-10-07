@@ -35,13 +35,6 @@
             check = false;
         }
 
-        // if ($('.Q4 input[type="checkbox"]:checked').length == 0) {
-        //     $('.Q4 .checkbox input[type="checkbox"]').each(function() {
-        //         $('.Q4 ul.checkbox li label').css("color", "#c80000");
-        //     });
-        //     check = false;
-        // }
-
         return check;
     });
 
@@ -202,18 +195,6 @@
         Q9disable();
     });
 
-    // $('.Q4').click(function() {
-    //     if (('.Q4 ul.checkbox li label').css("color") == "#c80000") {
-    //         $('.Q4 .checkbox input[type="checkbox"]').each(function() {
-    //             if (('.Q4 .checkbox input[type="checkbox"]').prop("checked") == true) {
-    //                 $('.Q4 ul.checkbox li label').css("color", "#ffffff");
-    //             } else {
-    //                 $('.Q4 ul.checkbox li label').css("color", "#adadad");
-    //             }
-    //         });
-    //     }
-    // });
-
     $('#Q5-Yes').click(function() {
         Q6disable();
     });
@@ -250,7 +231,7 @@
     });
 
     $('.Q10 input[type="radio"][name="Q10"]').change(function() {
-        if ($('#Q10-6').prop("checked") == true) {
+        if ($('#Q10-7').prop("checked") == true) {
             $('.Q10 .radio-btn').append('<textarea class="input other2" name="other2" placeholder="Write your suggestions / recommendations here..." row="1" column="50"></textarea>');
             $('.Q10 .radio-btn textarea[name="other2"]').focus();
         } else {
